@@ -1,4 +1,4 @@
-/*basic style*/
+/*BASIC STYLES*/
 body
 {
 	margin:5px 0 2px 0;
@@ -10,7 +10,7 @@ body
 	height:52px;
 }
 
-/*For background color*/
+/*FOR BACKGROUND COLOR*/
 .bg-0
 {
 	background-color: #003333;
@@ -35,8 +35,11 @@ body
 {
 	background-color: #ccffff;
 }
-/*for nav links*/
-
+/*NAVIGATION MENU*/
+.navbar
+{
+	border-radius:10px;
+}
 .nav-link
 {
 	display:inline-block;
@@ -68,15 +71,19 @@ body
 	text-align:center;
 	margin-top:-350px;
 	margin-right:-20px;
-	font-family: MyriadPro-Regular;
+	font-family: myriad-regular;
 	font-weight:bold;
+	font-size:30px;
 	color:#336666;
+
 	
 }
 #home p
 {
 	text-align:center;
-	font-size:20px;
-	font-family: MyriadPro-Regular;
+	font-size:10%;
+	font-family: myriad-regular;
 	color:#336666;
+	font-size:20px;
+	font-weight:bold;
 }
