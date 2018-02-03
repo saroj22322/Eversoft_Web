@@ -3852,6 +3852,7 @@ tbody.collapse.show {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -3986,13 +3987,14 @@ tbody.collapse.show {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-left:0;
   margin-bottom: 0;
   list-style: none;
+
 }
 
 .navbar-nav .nav-link {
-  padding-right: 0;
+  padding-right:0;
   padding-left: 0;
 }
 
