@@ -179,7 +179,7 @@
      position: absolute;
 }
 .myIcons{
-    width: 25px;
+    width: 15px;
     list-style: none;
     color: white;
     margin-right: 71px;
@@ -209,7 +209,7 @@
 .myRightLessMargin{
   margin-left: 50px;
 }
-/*
+
 @media only screen and (max-width: 1200px)
 {
   .myIcons{
@@ -222,19 +222,19 @@
     width: 125%;
   }
 }
-@media only screen and (max-width: 1022px)
+@media only screen and (max-width:  768px)
 {
   .khali{
     visibility: hidden;
     width: 0px;
   }
   #timeline .timeline-badge{
-    left: 90%;
+    left: 100%;
   }
   #timeline:before{
-    left: 91.2%;
+    left: 100%;
   }
-}*/
+}
 </style>
 <script type="text/javascript" src="jquery.min.js"></script>
 </head>
@@ -248,7 +248,6 @@
             </div>
         </div>
     </div>
-
     <div class="container">
     	<div id="timeline">
             <div class="row timeline-movement">
@@ -264,17 +263,17 @@
                           <ul class="timeline-panel-ul">
                             <li class="myIcons">
                               <div class="rounded">
-                                <img src="icons/psicon.png" />
+                                <img src="icons/psicon.png"  height="60" width="60"/>
                               </div>
                             </li>
                             <li class="myIcons">
                               <div class="rounded">
-                                <img src="icons/idicon.png"  />
+                                <img src="icons/idicon.png"   height="60" width="60"/>
                               </div>
                             </li>
                             <li class="myIcons">
                               <div class="rounded">
-                                <img src="icons/aiicon.png" />
+                                <img src="icons/aiicon.png"  height="60" width="60"/>
                               </div>
                             </li>
                           </ul>
@@ -305,17 +304,17 @@
                         <ul class="timeline-panel-ul"> 
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/aeicon.png" height="70" width="70" />
+                              <img src="icons/aeicon.png" height="60" width="60" />
                             </div>
                           </li>
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/psicon.png" height="70" width="70" />
+                              <img src="icons/psicon.png" height="60" width="60" />
                             </div>
                           </li>
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/mayaicon.png" height="70" width="70" />
+                              <img src="icons/mayaicon.png" height="60" width="60" />
                             </div>
                           </li>
                         </ul>
@@ -343,17 +342,17 @@
                         <ul class="timeline-panel-ul">          
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/c++icon.png" height="70" width="70" />
+                              <img src="icons/c++icon.png" height="60" width="60" />
                             </div>
                           </li>
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/vbicon.png" height="70" width="70" />
+                              <img src="icons/vbicon.png" height="60" width="60" />
                             </div>
                           </li>
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/javaicon.png" height="70" width="70" />
+                              <img src="icons/javaicon.png" height="60" width="60" />
                             </div>
                           </li>
                         </ul>
@@ -380,17 +379,17 @@
                         <ul class="timeline-panel-ul">      
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/htmlcssicon.png" height="70" width="70" />
+                              <img src="icons/htmlcssicon.png" height="60" width="60" />
                             </div>
                           </li>
                          <li class="myIcons">
                           <div class="rounded">
-                            <img src="icons/psicon.png" height="70" width="70" />
+                            <img src="icons/psicon.png" height="60" width="60" />
                           </div>
                         </li>
                         <li class="myIcons">
                           <div class="rounded">
-                            <img src="icons/wordpressicon.png" height="70" width="70" />
+                            <img src="icons/wordpressicon.png" height="60" width="60" />
                           </div>
                         </li>
                         </ul>
@@ -415,17 +414,17 @@
                         <ul class="timeline-panel-ul"> 
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/nodejsicon.png" height="80" width="80" />
+                              <img src="icons/nodejsicon.png" height="60" width="60" />
                             </div>
                           </li>
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/mysqlicon.png" height="80" width="80" />
+                              <img src="icons/mysqlicon.png" height="60" width="60" />
                             </div>
                           </li>
                           <li class="myIcons">
                             <div class="rounded">
-                              <img src="icons/phpicon.png" height="80" width="80" />
+                              <img src="icons/phpicon.png" height="60" width="60" />
                             </div>
                           </li>
                         </ul>
@@ -441,32 +440,32 @@
     </div>
 
 <script type="text/javascript">
-//   $( document ).ready(function() {
-//     alert($(window).width());
-//     var viewportWidth = $(window).width();
-//     if(viewportWidth < 1006) {
-//             $(".myLeft").removeClass("myHead").addClass("myHead-right");
-//             $(".myLeft-arrow").removeClass("arrow").addClass("arrow-right");
-//             $(".myLeftMargin").removeClass("myLeftMargin").addClass("myLeftLessMargin");
-//             $(".myRightMargin").removeClass("myRightMargin").addClass("myRightLessMargin");
-//     }
+   $( document ).ready(function() {
+    alert($(window).width());
+    var viewportWidth = $(window).width();
+    if(viewportWidth < 1006) {
+            $(".myLeft").removeClass("myHead").addClass("myHead-right");
+            $(".myLeft-arrow").removeClass("arrow").addClass("arrow-right");
+            $(".myLeftMargin").removeClass("myLeftMargin").addClass("myLeftLessMargin");
+            $(".myRightMargin").removeClass("myRightMargin").addClass("myRightLessMargin");
+    }
 
-// });
-//   $(window).on("load, resize", function() {
-//      var viewportWidth = $(window).width();
+});
+  $(window).on("load, resize", function() {
+     var viewportWidth = $(window).width();
     
-//     if(viewportWidth < 1006) {
-//             $(".myLeft").removeClass("myHead").addClass("myHead-right");
-//             $(".myLeft-arrow").removeClass("arrow").addClass("arrow-right");
-//             $(".myLeftMargin").removeClass("myLeftMargin").addClass("myLeftLessMargin");
-//             $(".myRightMargin").removeClass("myRightMargin").addClass("myRightLessMargin");
-//     }else{
-//        $(".myLeft").removeClass("myHead-right").addClass("myHead");
-//        $(".myLeft-arrow").removeClass("arrow-right").addClass("arrow");
-//        $(".myLeftLessMargin").removeClass("myLeftLessMargin").addClass("myLeftMargin");
-//        $(".myRightLessMargin").removeClass("myRightLessMargin").addClass("myRightMargin");
-//     }
-// });
+    if(viewportWidth < 768) {
+            $(".myLeft").removeClass("myHead").addClass("myHead-right");
+            $(".myLeft-arrow").removeClass("arrow").addClass("arrow-right");
+            $(".myLeftMargin").removeClass("myLeftMargin").addClass("myLeftLessMargin");
+            $(".myRightMargin").removeClass("myRightMargin").addClass("myRightLessMargin");
+    }else{
+       $(".myLeft").removeClass("myHead-right").addClass("myHead");
+       $(".myLeft-arrow").removeClass("arrow-right").addClass("arrow");
+       $(".myLeftLessMargin").removeClass("myLeftLessMargin").addClass("myLeftMargin");
+       $(".myRightLessMargin").removeClass("myRightLessMargin").addClass("myRightMargin");
+    }
+});
 </script>
 </body>
 </html>
