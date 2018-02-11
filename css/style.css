@@ -10,6 +10,7 @@ body
 	height:52px;
 }
 
+
 /*FOR BACKGROUND COLOR*/
 .bg-0
 {
@@ -34,6 +35,10 @@ body
 .bg-4
 {
 	background-color: #ccffff;
+}
+.bg-5
+{
+	background-color: #dceff5;
 }
 /*NAVIGATION MENU*/
 .navbar
@@ -66,19 +71,24 @@ body
 	height:402px;
 
 }
-#home h3
+
+#home .container .col {
+	position: relative;
+}
+
+#welcome
 {
 	text-align:center;
-	margin-top:-350px;
-	margin-right:-20px;
+	top:60px;
+	left:37%;
 	font-family: myriad-regular;
 	font-weight:bold;
 	font-size:30px;
 	color:#336666;
-
+	position:absolute;
 
 }
-#home p
+#welcome p
 {
 	text-align:center;
 	font-size:10%;
@@ -86,4 +96,38 @@ body
 	color:#336666;
 	font-size:20px;
 	font-weight:bold;
+	position:relative;
+}
+/*footer*/
+footer .container
+{
+	height:150px;
+
+}
+#footer-logo
+{
+	margin-top:10px;
+}
+#footer-copyright p
+{
+	font-size:16px;
+	color:#003334;
+}
+#footer-copyright a
+{
+	font-size:16px;
+	color:#003334;
+	cursor:default;
+
+}
+#footer-copyright a:hover
+{
+	color:#003333;
+	text-decoration:none;
+	font-weight: bold;
+}
+#social-icons img
+{
+	width:98px;
+	height:98px;
 }
