@@ -10,7 +10,8 @@
 	var finalPos = scrollPos + screenHeight;
 
 	for (var i = 0; i < toAnimate.length; i++) {
-		var elemTopPos = getOffsetTop(toAnimate[i]);
+		var elemTopPos = toAnimate[i].getBoundingClientRect().top + window.pageYOffset + document.documentElement.clientTop;
+		//getOffsetTop(toAnimate[i]);
 		console.log(elemTopPos);
 		if(elemTopPos < finalPos && !ifAlreadyAnimated(i)) {
 			var elem = toAnimate[i];
@@ -29,7 +30,7 @@
 		}
 	}
 
-	function getOffsetTop( elem )
+	/*function getOffsetTop( elem )
 	{
 	    var offsetTop = 0;
 	    do {
@@ -39,6 +40,6 @@
 	      }
 	    } while( elem = elem.offsetParent );
 	    return offsetTop;
-	}
+	}*/
 
 }

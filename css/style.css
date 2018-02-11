@@ -1,5 +1,31 @@
+@font-face {
+    font-family: 'Tauri';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tauri Regular'), local('Tauri-Regular'), url(http://themes.googleusercontent.com/static/fonts/tauri/v2/33NkxyDp8MBgQpwno_A-zw.woff) format('woff');
+}
+
 .container1 {
-	width: 600px;
+	width: 50%;
+	min-width: 500px;
 	height: auto;
-	margin: 20px auto;
+	margin: 1000px auto;
+	opacity: 1;
+}
+
+.txtTitle{
+	font-size: 20px;
+	z-index: 2;
+}
+
+.cls-1{fill:#276474;}
+.cls-2{fill:#011e2a;}
+.cls-3{fill:#94b8c1;}
+.cls-4{fill:#04333f;}
+.cls-5{fill:#efefef;}
+
+@media all and (max-width: 576px) {
+	.container1 {
+		min-width: 320px;
+	}
 }
