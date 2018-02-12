@@ -3,7 +3,6 @@
 
 	function animElement() {
 	var toAnimate = document.getElementsByClassName("toAnimate");
-	var boxHeight = toAnimate[0].clientHeight;
 
 	var scrollPos = window.document.documentElement.scrollTop;
 	var screenHeight = window.document.documentElement.clientHeight;
