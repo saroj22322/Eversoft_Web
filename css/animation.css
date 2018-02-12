@@ -21,47 +21,47 @@
 }
 
 
-.fill-in {
+.fillIn {
   -webkit-animation-duration : 2s;
   animation-duration : 2s;
-  -webkit-animation-name : fill-in;
-  animation-name : fill-in;
+  -webkit-animation-name : fillIn;
+  animation-name : fillIn;
 }
 
 
-@keyframes fill-in {
+@keyframes fillIn {
   0% {
-    fill-opacity : 0;
+    opacity : 0;
   }
   25% {
-    fill-opacity : 0.1;
+    opacity : 0.1;
   }
   50% {
-    fill-opacity : 0.2;
+    opacity : 0.2;
   }
   75% {
-    fill-opacity : 0.3;
+    opacity : 0.3;
   }
   to {
-    fill-opacity : 1;
+    opacity : 1;
   }
 }
 
-@-webkit-keyframes fill-in {
+@-webkit-keyframes fillIn {
   0% {
-    fill-opacity : 0;
+    opacity : 0;
   }
   25% {
-    fill-opacity : 0.1;
+    opacity : 0.1;
   }
   50% {
-    fill-opacity : 0.2;
+    opacity : 0.2;
   }
   75% {
-    fill-opacity : 0.3;
+    opacity : 0.3;
   }
   to {
-    fill-opacity : 1;
+    opacity : 1;
   }
 }
 

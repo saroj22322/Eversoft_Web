@@ -12,14 +12,15 @@
 	for (var i = 0; i < toAnimate.length; i++) {
 		var elemTopPos = toAnimate[i].getBoundingClientRect().top + window.pageYOffset + document.documentElement.clientTop;
 		//getOffsetTop(toAnimate[i]);
-		console.log(elemTopPos);
 		if(elemTopPos < finalPos && !ifAlreadyAnimated(i)) {
 			var elem = toAnimate[i];
 			var child = elem.cloneNode(true);
 			elem.parentNode.replaceChild(child, elem);
 			child.classList.add("animated");
+			child.style.visibility = "visible";
 		}else if(elemTopPos > finalPos){
 			toAnimate[i].classList.remove("animated");
+			toAnimate[i].style.visibility ="hidden";
 		}
 	}
 

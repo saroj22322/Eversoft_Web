@@ -8,7 +8,6 @@
 /* Set a background color */
 body {
   font-family: Tauri,Helvetica, sans-serif;
-  background: #000000;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -17,7 +16,7 @@ body {
   position: relative;
   max-width: 900px;
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 /* The actual timeline (the vertical ruler) */
