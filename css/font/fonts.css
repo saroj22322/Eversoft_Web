@@ -1,0 +1,11 @@
+@font-face
+{
+	font-family:'myriad-regular';
+	src: local("../css/font/MyriadPro-Regular.otf") format("otf");
+}/*
+@font-face {
+    font-family: 'myriad-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tauri Regular'), local('Tauri-Regular'), url(http://themes.googleusercontent.com/static/fonts/tauri/v2/33NkxyDp8MBgQpwno_A-zw.woff) format('woff');
+}*/

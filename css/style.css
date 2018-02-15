@@ -1,0 +1,133 @@
+/*BASIC STYLES*/
+body
+{
+	margin:5px 0 2px 0;
+}
+/*logo*/
+#evr-logo
+{
+	width:239px;
+	height:52px;
+}
+
+
+/*FOR BACKGROUND COLOR*/
+.bg-0
+{
+	background-color: #003333;
+}
+
+.bg-1
+{
+	background-color: #003334;
+}
+
+.bg-2
+{
+	background-color: #336666;
+}
+
+.bg-3
+{
+	background-color: #99cccc;
+}
+
+.bg-4
+{
+	background-color: #ccffff;
+}
+.bg-5
+{
+	background-color: #dceff5;
+}
+/*NAVIGATION MENU*/
+.navbar
+{
+	border-radius:10px;
+}
+.nav-link
+{
+	display:inline-block;
+	float:none;
+	padding:.3rem .3rem;
+	line-height:.8rem;
+	color:#ccffff;
+	font-size:29px;
+	font-family:myriad-regular;
+	text-indent:20px;
+
+}
+.nav-link:hover
+{
+  text-decoration: none;
+  color:white;
+}
+
+/*HOME SECTION*/
+#home-img
+{
+
+	width:100%;
+	height:402px;
+
+}
+
+#home .container .col {
+	position: relative;
+}
+
+#welcome
+{
+	text-align:center;
+	top:60px;
+	left:37%;
+	font-family: myriad-regular;
+	font-weight:bold;
+	font-size:30px;
+	color:#336666;
+	position:absolute;
+
+}
+#welcome p
+{
+	text-align:center;
+	font-size:10%;
+	font-family: myriad-regular;
+	color:#336666;
+	font-size:20px;
+	font-weight:bold;
+	position:relative;
+}
+/*footer*/
+footer .container
+{
+	height:150px;
+
+}
+#footer-logo
+{
+	margin-top:10px;
+}
+#footer-copyright p
+{
+	font-size:16px;
+	color:#003334;
+}
+#footer-copyright a
+{
+	font-size:16px;
+	color:#003334;
+	cursor:default;
+
+}
+#footer-copyright a:hover
+{
+	color:#003333;
+	text-decoration:none;
+	font-weight: bold;
+}
+#social-icons img
+{
+	width:98px;
+	height:98px;
+}
