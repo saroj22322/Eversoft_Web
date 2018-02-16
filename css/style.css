@@ -6,8 +6,8 @@ body
 /*logo*/
 #evr-logo
 {
-	width:239px;
-	height:52px;
+	width: 30%;
+	padding: 2px 0px;
 }
 
 
@@ -40,11 +40,35 @@ body
 {
 	background-color: #dceff5;
 }
-/*NAVIGATION MENU*/
+
+
+.navbar-bg-0 .navbar-toggler {
+    border-color: rgba(255,255,255,.3);
+}
+
+.navbar-bg-0 .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#collapsingNavbar {
+	padding: 10px 0px;
+}
+
+.show .navbar-nav .nav-link{
+	padding: 8px 0px;
+	font-size: 15px;
+}
+
+.collapsing .navbar-nav .nav-link{
+	padding: 8px 0px;
+	font-size: 15px;
+}
+
 .navbar
 {
 	border-radius:10px;
 }
+
 .nav-link
 {
 	display:inline-block;
@@ -52,7 +76,7 @@ body
 	padding:.3rem .3rem;
 	line-height:.8rem;
 	color:#ccffff;
-	font-size:29px;
+	font-size:24px;
 	font-family:Roboto, sans-serif;
 	text-indent:20px;
 
@@ -64,13 +88,6 @@ body
 }
 
 /*HOME SECTION*/
-#home-img
-{
-
-	width:100%;
-	height:402px;
-
-}
 
 #home .container .col {
 	position: relative;
@@ -79,23 +96,24 @@ body
 #welcome
 {
 	text-align:center;
-	top:60px;
-	left:37%;
+	top:12%;
+	left:11%;
 	font-family: Roboto, sans-serif;
-	font-weight:bold;
-	font-size:30px;
 	color:#336666;
 	position:absolute;
 
 }
+
+#welcome h3 {
+	font-weight:bold;
+	font-size:30px;
+}
+
 #welcome p
 {
-	text-align:center;
-	font-size:10%;
 	font-family: Roboto, sans-serif;
-	color:#336666;
-	font-size:20px;
-	font-weight:bold;
+	font-size:22px;
+	font-weight:normal;
 	position:relative;
 }
 /*footer*/
@@ -106,12 +124,13 @@ footer .container
 }
 #footer-logo
 {
-	margin-top:10px;
+	margin-top:20px;
 }
 #footer-copyright p
 {
 	font-size:16px;
 	color:#003334;
+	margin: 5px 0px;
 }
 #footer-copyright a
 {
@@ -126,8 +145,52 @@ footer .container
 	text-decoration:none;
 	font-weight: bold;
 }
-#social-icons img
+
+.social-icons {
+	position: relative;
+	text-align: center;
+}
+
+.social-icons img
 {
-	width:98px;
-	height:98px;
+	width:35px;
+	height:35px;
+	margin:0% 1.5%;
+}
+
+@media all and (max-width: 991px) {
+	#welcome h3{
+		font-size: 25px;
+	}
+
+	#welcome p
+	{
+		font-size: 16px;
+		line-height: 1.2;
+	}
+}
+
+@media all and (max-width: 767px) {
+	#welcome h3{
+		font-size: 17px;
+	}
+
+	#welcome p
+	{
+		font-size: 11px;
+		line-height: 1.1;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#welcome h3{
+		font-size: 13px;
+	}
+
+	#welcome p
+	{
+		font-size: 7px;
+		line-height: 1;
+	}
+
 }
