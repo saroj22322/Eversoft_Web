@@ -4,7 +4,7 @@
 	function animElement() {
 	var toAnimate = document.getElementsByClassName("toAnimate");
 
-	var scrollPos = window.document.documentElement.scrollTop;
+	var scrollPos = (window.document.documentElement.scrollTop > 0) ? window.document.documentElement.scrollTop : window.document.body.scrollTop;
 	var screenHeight = window.document.documentElement.clientHeight;
 	var finalPos = scrollPos + screenHeight;
 

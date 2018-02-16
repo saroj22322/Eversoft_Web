@@ -10,13 +10,22 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+
+.mainContainer { 
+  margin-top: 30px;
+}
+
+.mainContainer .titleClass h2{
+  color: rgba(0,51,51,1);
+  text-align: center;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  margin-top: 30px;
   position: relative;
   max-width: 900px;
   width: 100%;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -26,7 +35,7 @@ body {
   width: 10px;
   background-color: rgba(230,230,230,1);
   top: 20px;
-  bottom: 4%;
+  bottom: 15%;
   left: 50%;
   margin-left: -7px;
   border-bottom-left-radius: 2px;
@@ -43,6 +52,7 @@ body {
   width: 50%;
   clear: both;
   z-index: 1;
+  display: inline-block;
 }
 
 /* The circles on the timeline */
@@ -54,7 +64,7 @@ body {
   right: -13px;
   background-color: white;
   border: 7px solid #003334;
-  top: 15px;
+  top: 10px;
   border-radius: 50%;
 }
 
@@ -181,12 +191,21 @@ body {
 
 /* Full-width containers */
   .container {
-    margin: 10px 0px;
+    margin: 5px 0px;
     width: 100%;
     padding-left: 70px;
-    padding-right: 25px;
+    padding-right: 7%;
     position: relative;
   }
+
+  .myHead {
+    padding: 5px 1px;
+    font-size: 14px;
+  }
+
+  .icons1{
+    width: 60%;
+}
 
 /* Make sure that all arrows are pointing leftwards */
   .container::before {
@@ -195,6 +214,7 @@ body {
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
+
 
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
