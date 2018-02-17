@@ -1,4 +1,4 @@
-
+/* Start here for the SVG Element */
 .container1 {
 	width: 50%;
 	min-width: 500px;
@@ -22,6 +22,47 @@
 .st10{fill:#FFFFFF;}
 .st17{font-family:'ArialMT';}
 .st18{font-size:48.9464px;}
+
+/*End here for SVG Element but media query have a css*/
+
+.bg-0
+{
+	background-color: #003333;
+}
+
+.bg-1
+{
+	background-color: #003334;
+}
+
+.bg-2
+{
+	background-color: #336666;
+}
+
+.bg-3
+{
+	background-color: #99cccc;
+}
+
+.bg-4
+{
+	background-color: #ccffff;
+}
+.bg-5
+{
+	background-color: #dceff5;
+}
+
+.acc {
+	cursor: pointer;
+}
+
+.collapse.show {
+	display: flex;
+}
+
+
 
 @media all and (max-width: 576px) {
 	.container1 {
