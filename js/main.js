@@ -2,7 +2,6 @@ $(document).ready(function(){
 
     loadGallery(true, 'a.thumbnail');
 
-    //This function disables buttons when needed
     function disableButtons(counter_max, counter_current){
         $('#show-previous-image, #show-next-image').show();
         if(counter_max == counter_current){
@@ -11,12 +10,6 @@ $(document).ready(function(){
             $('#show-previous-image').hide();
         }
     }
-
-    /**
-     *
-     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-     * @param setClickAttr  Sets the attribute for the click handler.
-     */
 
     function loadGallery(setIDs, setClickAttr){
         var current_image,
@@ -49,10 +42,13 @@ $(document).ready(function(){
                 $(this).attr('data-image-id',counter);
             });
         }
-        $(setClickAttr).on('click',function(){
-            updateGallery($(this));
-        });
-    }
 
+      	$(document).on('click',setClickAttr, function (event) {
+      		updateGallery($(this));
+    	});
+
+
+
+     }
 
 });
