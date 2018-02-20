@@ -3,6 +3,7 @@ body
 {
 	margin:5px 0 2px 0;
 }
+
 /*logo*/
 #evr-logo
 {
@@ -10,8 +11,6 @@ body
 	padding: 2px 0px;
 }
 
-
-/*FOR BACKGROUND COLOR*/
 .bg-0
 {
 	background-color: #003333;
@@ -40,7 +39,6 @@ body
 {
 	background-color: #dceff5;
 }
-
 
 .navbar-bg-0 .navbar-toggler {
     border-color: rgba(255,255,255,.3);
@@ -116,6 +114,92 @@ body
 	font-weight:normal;
 	position:relative;
 }
+
+.container1 {
+	width: 55%;
+	min-width: 500px;
+	height: auto;
+	margin: 10px auto;
+	opacity: 1;
+}
+
+.thumbnail img{
+	padding: 20px;
+	height: 250px;
+	border: 3px solid rgba(255,255,255,0.4);
+	border-radius: 20px;
+}
+
+
+/* Start here for the SVG Element */
+
+.cls-1{fill:#276474;}
+.cls-2{fill:#011e2a;}
+.cls-3{fill:#94b8c1;}
+.cls-4{fill:#04333f;}
+.cls-5{fill:#efefef;}
+.st1{fill:#011E2A;}
+.st2{fill:#94B8C1;}
+.st10{fill:#FFFFFF;}
+.st17{font-family:'ArialMT';}
+.st18{font-size:48.9464px;}
+
+/*End here for SVG Element but media query have a css*/
+
+/* SVG About US Start here*/
+.stab0{fill:#FFFFFF;}
+.stab1{fill:#DCEFF5;}
+.stab2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+.stab3{fill:#94B9C3;}
+
+
+
+.stab10{enable-background:new    ;}
+	.stab11{fill:#001E29;}
+	.stab12{font-family:'MyriadPro-Bold';}
+	.stab13{font-size:10px;}
+	.stab14{font-family:'MyriadPro-Regular';}
+	.stab15{font-size:6px;}
+	.stab16{fill:none;}
+	.stab17{color:#FFFFFF;
+			overflow-y: hidden;
+			line-height: 1.35;
+			}
+	.stab18{font-size:9px;}
+/*SVG About Us end here */
+
+.acc {
+	cursor: pointer;
+}
+
+.collapse.show {
+	display: flex;
+}
+
+.title-div {
+	border: 2px solid #99cccc;
+}
+
+h5[aria-expanded="false"] span:after{
+	content: '+';
+	position: absolute;
+	top: 6px;
+	right: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+h5[aria-expanded="true"] span:after{
+	content: '-';
+	position: absolute;
+	top: 6px;
+	right: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
 /*Contact Us Section*/
 #contact button
 {
@@ -163,6 +247,7 @@ footer .container
 	margin:0% 1.5%;
 }
 
+
 @media all and (max-width: 991px) {
 	#welcome h3{
 		font-size: 25px;
@@ -185,6 +270,13 @@ footer .container
 		font-size: 11px;
 		line-height: 1.1;
 	}
+}
+
+@media all and (max-width: 576px) {
+	.container1 {
+		min-width: 320px;
+	}
+
 }
 
 @media all and (max-width: 480px) {

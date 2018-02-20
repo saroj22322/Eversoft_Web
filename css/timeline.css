@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin : 0px;
+  padding: 0px;
+}
+
+
+/* Set a background color */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+
+.mainContainer { 
+  margin-top: 30px;
+}
+
+.mainContainer .titleClass h2{
+  color: rgba(0,51,51,1);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  margin: 15px auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  background-color: rgba(230,230,230,1);
+  top: 20px;
+  bottom: 15%;
+  left: 50%;
+  margin-left: -7px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  box-sizing: unset;
+}
+
+/* Container around content */
+.container2 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  clear: both;
+  z-index: 1;
+  display: inline-block;
+}
+
+/* The circles on the timeline */
+.container2::after {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: -13px;
+  background-color: white;
+  border: 7px solid #003334;
+  top: 10px;
+  border-radius: 50%;
+  box-sizing: unset;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  background-color: rgba(242,242,242,1);
+  position: relative; 
+  max-height: 80px;
+  width: 90%;
+  padding-bottom: 5px;
+}
+
+.floatright {
+  float: right;  
+  margin-right: 6%;
+}
+
+.floatleft {
+  float: left;  
+  margin-left: 6%;
+}
+
+
+
+/*Pradeep's Code'*/
+
+.myHead {
+    display: inline-block;
+    padding: 10px 0px;
+     background: #003333;
+     position: relative;
+     width: 100%;
+    -webkit-box-shadow: 0px 20px 48px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow:0px 20px 48px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 20px 48px -20px rgba(0,0,0,0.75);
+    color: #454545;    
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.myHead-left {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.myHead-right {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+ 
+.arrow {
+     width: 0; height: 0;
+     line-height: 0;
+     border-top: 25px solid #003333;
+     top: 100%;
+     position: absolute;
+}
+.arrow-right {
+     border-right: 20px solid transparent;
+     right: 0;
+}
+.arrow-left {
+  border-left: 20px solid transparent;
+  left: 0;
+}
+
+.myIcons{
+    width: 30%;
+    height: auto;
+    list-style: none;
+    color: white;
+    float: left;
+    padding-top: 10px;
+
+}
+
+.icons1{
+    max-width: 60px;
+    width: 80%;
+    height: auto;
+}
+
+ .timeline-panel-ul {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
+}
+.timeline-panel-ul {
+  text-align: center;
+  height: auto;
+}
+.timeline-panel-ul li {
+  color: #666;
+}
+
+@media all and (max-width: 576px) {
+/* Place the timelime to the left */
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline::after {
+    left: 50px;
+  }
+
+/* Full-width containers */
+  .container2 {
+    margin: 5px 0px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 7%;
+    position: relative;
+  }
+
+  .myHead {
+    padding: 5px 1px;
+    font-size: 14px;
+  }
+
+  .icons1{
+    width: 60%;
+}
+
+/* Make sure that all arrows are pointing leftwards */
+  .container2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
+  .arrow-left {
+     border-right: 20px solid transparent;
+     right: 0%;
+     border-left: none;
+     left: unset;
+  }
+
+  .myHead-left {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .floatright {
+    float: left;  
+    margin-left: 6%;
+  }
+
+
+}
+/*Ende hier*/
