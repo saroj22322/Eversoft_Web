@@ -1,11 +1,13 @@
+
 	window.addEventListener("load", animElement);
 	window.addEventListener("scroll",animElement);
 	window.addEventListener("resize",animElement);
 
 	function animElement() {
+
 	if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
     {
-      if(document.documentElement.clientWidth < 576) {
+      if(document.documentElement.clientWidth <= 576) {
       	var arrows = document.getElementsByClassName('arrow-left');
       	for (var i = arrows.length - 1; i >= 0; i--) {
       		arrows[i].style.display = 'none';

@@ -12,6 +12,14 @@ body
 	padding: 2px 0px;
 }
 
+#homeimg {
+	background-image: url("../img/homepage1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
+
 .bg-0
 {
 	background-color: #003333;
@@ -126,7 +134,7 @@ body
 }
 
 .svgRounded {
-	min-height: 500px;
+	min-height: 600px;
 }
 
 .thumbnail img{
@@ -255,7 +263,7 @@ footer .container
 
 
 @media all and (max-width: 991px) {
-	#welcome h3{
+	/*#welcome h3{
 		font-size: 25px;
 	}
 
@@ -263,11 +271,20 @@ footer .container
 	{
 		font-size: 16px;
 		line-height: 1.2;
+	}*/
+
+	.g-recaptcha {
+		margin-left: -15px;
+			-webkit-transform: scale(0.90);
+		     -moz-transform: scale(0.90);
+		      -ms-transform: scale(0.90);
+		       -o-transform: scale(0.90);
+		          transform: scale(0.90);
 	}
 }
 
 @media all and (max-width: 767px) {
-	#welcome h3{
+	/*#welcome h3{
 		font-size: 17px;
 	}
 
@@ -275,26 +292,65 @@ footer .container
 	{
 		font-size: 11px;
 		line-height: 1.1;
+	}*/
+
+	.g-recaptcha {
+		margin-left: -25px;
+			-webkit-transform: scale(0.80);
+		     -moz-transform: scale(0.80);
+		      -ms-transform: scale(0.80);
+		       -o-transform: scale(0.80);
+		          transform: scale(0.80);
 	}
 }
 
 @media all and (max-width: 576px) {
+#homeimg {
+		background-image: url("../img/homepagembl.png");
+		background-size: contain;
+		background-position: top;
+		height: 400px;
+	}
+
 	.container1, .svgRounded {
 		min-width: 320px;
 		min-height: 320px;
+		width: 98%;
 	}
 
-}
-
-@media all and (max-width: 480px) {
 	#welcome h3{
-		font-size: 13px;
+		font-size: 25px;
 	}
 
 	#welcome p
 	{
-		font-size: 7px;
-		line-height: 1;
+		font-size: 16px;
+		line-height: 1.7;
+	}
+
+	.g-recaptcha {
+		margin-left: 0px;
+			-webkit-transform: scale(1);
+		     -moz-transform: scale(1);
+		      -ms-transform: scale(1);
+		       -o-transform: scale(1);
+		          transform: scale(1);
+	}
+
+}
+
+@media all and (max-width: 400px) {
+	#homeimg {
+		height: 350px;
+	}
+	#welcome h3{
+		font-size: 20px;
+	}
+
+	#welcome p
+	{
+		font-size: 14px;
+		line-height: 1.3;
 	}
 
 }

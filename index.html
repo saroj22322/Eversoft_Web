@@ -18,6 +18,7 @@
   <script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/animation.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <!--Header section-->
@@ -51,11 +52,11 @@
     <section id ="home" class="mainContainer">
          <div class="container">
            <div class="row">
-             <div class="col">
-                  <img src="./img/homepage1.png" class="w-100">
+             <div class="col" id="homeimg">
+                  <!--<img src="./img/homepage1.png" class="w-100" id="homeimg">-->
                 <div id="welcome" class="w-75">
                   <h3>Welcome</h3>
-                  <p>We faciliate the ability to make <br> you connect with 10 <br> billion IT users with various <br>multimedia elements</p>
+                  <p>We facilitate the ability to <br> connect you with 10 <br> billion IT users with various <br>multimedia elements.</p>
                 </div>
               </div>
             </div>
@@ -307,7 +308,7 @@
   <!-- End of container -->
 
   <!-- Start of container -->
-  <div class="container bg-5 toAnimate slideInLeft">
+  <!--<div class="container bg-5 toAnimate slideInLeft">
 
     <div class="row acc">
       <div class="col title-div"><h5 data-toggle="collapse" data-target="#meinCollapse2" aria-expanded="false" class="text-center font-weight-bold mt-3 mb-3">Personal/Business Card <span class="group-title"></span></h5></div>
@@ -339,11 +340,11 @@
       </div>
     </div>   
 
-  </div>
+  </div>-->
   <!-- End of container -->
 
   <!-- Start of container -->
-  <div class="container bg-5 toAnimate slideInLeft">
+  <!--<div class="container bg-5 toAnimate slideInLeft">
 
     <div class="row acc">
       <div class="col title-div"><h5 data-toggle="collapse" data-target="#meinCollapse3" aria-expanded="false" class="text-center font-weight-bold mt-3 mb-3">Certificate <span class="group-title"></span></h5></div>
@@ -375,7 +376,7 @@
       </div>
     </div>   
 
-  </div>
+  </div>-->
 <!-- End of container -->
 </section>
 <!--End of Graphic Design Page-->
@@ -393,7 +394,7 @@
 
       <!-- Start of Arjuns Part-->
 
-      <div class="col-12 col-sm-6 col-md-4 mt-3" style="min-height: 500px;">
+      <div class="col-12 col-sm-6 col-md-4 mt-3 svgIeSetting">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 337 530" style="enable-background:new 0 0 337 530;" xml:space="preserve">
         <g>
@@ -460,7 +461,7 @@
     
       <!-- Start of Pravhus Part-->
 
-      <div class="col-12 col-sm-6 col-md-4 mt-3" style="min-height: 500px;">
+      <div class="col-12 col-sm-6 col-md-4 mt-3 svgIeSetting">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 337 530" style="enable-background:new 0 0 337 530;" xml:space="preserve">
         <g>
@@ -527,7 +528,7 @@
 
       <!-- Start of Pradeeps Part-->
 
-      <div class="col-12 col-sm-6 col-md-4 mt-3" style="min-height: 500px;">
+      <div class="col-12 col-sm-6 col-md-4 mt-3 svgIeSetting">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 337 530" style="enable-background:new 0 0 337 530;" xml:space="preserve">
         <g>
@@ -595,7 +596,7 @@
       <!--End of Pradeeps Part-->
 
       <!-- Start of Pradips Part-->
-      <div class="col-12 col-sm-6 col-md-4 mt-3" style="min-height: 500px;">
+      <div class="col-12 col-sm-6 col-md-4 mt-3 svgIeSetting">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 337 530" style="enable-background:new 0 0 337 530;" xml:space="preserve">
         <g>
@@ -662,7 +663,7 @@
     <!-- End of Pradips Part-->
 
     <!-- Start of Rajus Part-->
-      <div class="col-12 col-sm-6 col-md-4 mt-3" style="min-height: 500px;">
+      <div class="col-12 col-sm-6 col-md-4 mt-3 svgIeSetting">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 337 530" style="enable-background:new 0 0 337 530;" xml:space="preserve">
         <g>
@@ -729,7 +730,7 @@
     <!-- End of Rajus Part-->
 
     <!-- Start of Sarojs Part-->
-      <div class="col-12 col-sm-6 col-md-4 mt-3" style="min-height: 500px;">
+      <div class="col-12 col-sm-6 col-md-4 mt-3 svgIeSetting">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 337 530" style="enable-background:new 0 0 337 530;" xml:space="preserve">
         <g>
@@ -831,7 +832,14 @@
                       <label for="message">Message *</label>
                        <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-info">Submit</button> 
+                    <div class="form-group">
+                      <div class="g-recaptcha" data-sitekey="6Ldky0cUAAAAAH0onfp852gp7PLk2SjUJHE40IK-"
+                                                   data-callback="captcha_filled"
+                                                  data-expired-callback="captcha_expired">
+                                                    
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-info" id="form_btn" disabled>Submit</button> 
                   </form>
                   </div>
                   </div>
@@ -896,6 +904,31 @@
       </div>
   </div>
 <!-- End of Modal -->
+
+<script type="text/javascript">
+  /*if(document.documentElement.clientWidth <= 576) {
+    document.getElementById('homeimg').src="./img/homepagembl.png";
+  } else {
+    document.getElementById('homeimg').src="./img/homepage1.png";
+  }*/
+
+  if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      var svgIe = document.getElementsByClassName('svgIeSetting');
+        for (var i = svgIe.length - 1; i >= 0; i--) {
+          svgIe[i].style.minHeight = "500px";
+        }
+      }
+
+  function captcha_filled(){
+    if (grecaptcha.getResponse() != "")
+    document.getElementById("form_btn").disabled = false;
+  }
+
+  function captcha_expired(){                   
+    document.getElementById("form_btn").disabled = true;
+  }
+  </script>
 
 </body>
 </html>
