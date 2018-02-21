@@ -138,7 +138,7 @@ body
 }
 
 .thumbnail img{
-	padding: 20px;
+	padding: 10px;
 	height: 250px;
 	border: 3px solid rgba(255,255,255,0.4);
 	border-radius: 20px;
@@ -335,6 +335,10 @@ footer .container
 		      -ms-transform: scale(1);
 		       -o-transform: scale(1);
 		          transform: scale(1);
+	}
+
+	.thumbnail img{
+		height: 200px;
 	}
 
 }
