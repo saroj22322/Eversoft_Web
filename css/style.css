@@ -2,6 +2,7 @@
 body
 {
 	margin:5px 0 2px 0;
+  	font-family: Roboto, sans-serif;
 }
 
 /*logo*/
@@ -172,7 +173,7 @@ body
 	cursor: pointer;
 }
 
-.collapse.show {
+.row.collapse.show {
 	display: flex;
 }
 
