@@ -63,7 +63,7 @@
   border: 7px solid #003334;
   top: 10px;
   border-radius: 50%;
-  box-sizing: unset;
+  box-sizing: content-box;
 }
 
 /* Place the container to the left */

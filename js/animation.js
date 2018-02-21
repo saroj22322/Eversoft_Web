@@ -1,7 +1,24 @@
 	window.addEventListener("load", animElement);
 	window.addEventListener("scroll",animElement);
+	window.addEventListener("resize",animElement);
 
 	function animElement() {
+	if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      if(document.documentElement.clientWidth < 576) {
+      	var arrows = document.getElementsByClassName('arrow-left');
+      	for (var i = arrows.length - 1; i >= 0; i--) {
+      		arrows[i].style.display = 'none';
+      	}
+
+      	var arrows = document.getElementsByClassName('arrow-right');
+      	for (var i = arrows.length - 1; i >= 0; i--) {
+      		arrows[i].style.display = 'none';
+      	}
+
+      }
+      return;
+    } else {
 	var toAnimate = document.getElementsByClassName("toAnimate");
 
 	var scrollPos = (window.document.documentElement.scrollTop > 0) ? window.document.documentElement.scrollTop : window.document.body.scrollTop;
@@ -22,6 +39,7 @@
 			toAnimate[i].style.visibility ="hidden";
 		}
 	}
+}
 
 	function ifAlreadyAnimated(id) {
 		for (var i = toAnimate[id].classList.length - 1; i >= 0; i--) {

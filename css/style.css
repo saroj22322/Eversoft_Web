@@ -119,9 +119,14 @@ body
 .container1 {
 	width: 55%;
 	min-width: 500px;
+	min-height: 500px;
 	height: auto;
 	margin: 10px auto;
 	opacity: 1;
+}
+
+.svgRounded {
+	min-height: 500px;
 }
 
 .thumbnail img{
@@ -274,8 +279,9 @@ footer .container
 }
 
 @media all and (max-width: 576px) {
-	.container1 {
+	.container1, .svgRounded {
 		min-width: 320px;
+		min-height: 320px;
 	}
 
 }
